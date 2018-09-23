@@ -1,30 +1,15 @@
 # Udacity Car Capstone project
 
-[//]: # (Image References)
 
-[image1]: ./imgs/simulator.png "simulator"
-[image2]: ./imgs/ros_code_structure.PNG "ros code structure"
-[image3]: ./imgs/tl-detector-ros-graph.png "traffic light detector node"
-[image4]: ./imgs/waypoint-updater-ros-graph.png "waypoint updater node"
-[image5]: ./imgs/dbw-node-ros-graph.png "dbw node"
-[image6]: ./imgs/result_highway_video.PNG "result highway"
-[image7]: ./imgs/result_testlot_video.PNG "result testlot"
-[image8]: ./imgs/result_rosbag_video.PNG "rosbag testlot"
+#### Team Torque 
 
-Presented by
 
-#### Torque team
-
-Project leader:
+Members:
 <table style="border-collapse: collapse; border: none;">
 <tr>
     <td>Tom Bertalan</td>
     <td>tom@tombertalan.com</td>
 </tr>
-</table>
-
-Members:
-<table style="border-collapse: collapse; border: none;">
 <tr>
     <td>Dean Liu</td>
     <td>windsurf_dean@yahoo.com</td>
@@ -78,7 +63,7 @@ The project has the following structure. Details of each folder is given below.
 * 64-bit OS
 
 ### Setup development environment
-Please use **one** of the two installation options, either native **or** docker installation.
+We used native installation. The steps are given below.
 
 #### Native Installation
 
@@ -122,32 +107,6 @@ Please use **one** of the two installation options, either native **or** docker 
 14. Optionally, install the the Rviz plugins with `sudo apt-get install ros-kinetic-jsk-rviz-plugins libbullet-dev libsdl-image1.2-dev libsdl-dev`.
 
 
-
-#### Docker Installation
-
-1. [Install Docker](https://docs.docker.com/install/)
-
-2. [Install Nvidia-Docker](https://github.com/nvidia/nvidia-docker/wiki/Installation-(version-2.0))
-
-3. Build the docker container
-
-    ```
-    docker build . -t capstone
-    ```
-
-4. Run the docker file
-
-    ```
-    docker run --runtime=nvidia -p 4567:4567 -v $PWD:/capstone -v /tmp/log:/root/.ros/ --rm -it capstone
-    ```
-
-5. To enable X-display in docker environment
-
-    ```
-    sudo xhost +local:docker
-    sudo docker run --runtime=nvidia -p 4567:4567 -v $PWD:/capstone -e DISPLAY=$DISPLAY -v /tmp/log:/root/.ros/ -v /tmp/.X11-unix:/tmp/.X11-unix --rm -it capstone
-    ```
-
 ### Port Forwarding
 To set up port forwarding, please refer to the [instructions from term 2](https://classroom.udacity.com/nanodegrees/nd013/parts/40f38239-66b6-46ec-ae68-03afd8a601c8/modules/0949fca6-b379-42af-a919-ee50aa304e6a/lessons/f758c44c-5e40-4e01-93b5-1a82aa4e044f/concepts/16cf4a78-4fc7-49e1-8621-3450ca938b77)
 
@@ -187,16 +146,5 @@ This project is divided into parts
 2. Testing on ROS bag
 3. Testing on actual vehicle, Carla
 
-#### Running on the simulator
-
-[<img src="https://github.com/ymlai87416/CarND-Capstone/blob/master/imgs/result_highway_video.PNG">](https://youtu.be/K3YOUEuKAwQ)
-
-[<img src="https://github.com/ymlai87416/CarND-Capstone/blob/master/imgs/result_testlot_video.PNG">](https://youtu.be/J22OQShw-7o)
-
-#### Pre Carla testing on ROS bag
-
-[<img src="https://github.com/ymlai87416/CarND-Capstone/blob/master/imgs/result_rosbag_video.PNG">](https://youtu.be/lCfDJDUgrS8)
-
-#### Testing on Carla
-
-TBA
+We were able to successfully run the code on the simulator as well as with the ROS bags. Running on the
+actual vehicle is pending.
