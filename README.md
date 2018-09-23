@@ -37,6 +37,7 @@ Initially we develop and test our code within a simulator and once we are satisf
 ### Project directories overview
 
 The project has the following structure. Details of each folder is given below.
+
 | Folder | Description |
 | :------------ | :----------- |
 | /data       | Contain waypoint CSV files for the test cases  |
