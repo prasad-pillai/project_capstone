@@ -1,10 +1,8 @@
 # Udacity Car Capstone project
 
 
-#### Team Torque 
+#### Team  Members
 
-
-Members:
 <table style="border-collapse: collapse; border: none;">
 <tr>
     <td>Tom Bertalan</td>
